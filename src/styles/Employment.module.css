@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    font-family: 'Roboto', sans-serif;
+}
+
+.body {
+    background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url('../../public/projects/Denslow/VashonBuild110.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.title {
+    font-size: 2.3rem;
+    font-weight: 900;
+    color: #fff;
+    margin: 0;
+    padding-top: 10rem;
+    text-align: center;
+}
+
+
+.text {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding-top: 1rem;
+    z-index: 1;
+    width: 40%;
+    padding-bottom: 1rem;
+
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    font-family: 'Roboto', sans-serif;
+    min-height: 50vh;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+    .text {
+        width: 80%;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+}

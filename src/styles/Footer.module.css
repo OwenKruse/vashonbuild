@@ -1,0 +1,49 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    font-family: 'Roboto', sans-serif;
+}
+
+.text {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding-top: 1rem;
+    z-index: 1;
+    width: 40%;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    font-family: 'Roboto', sans-serif;
+}

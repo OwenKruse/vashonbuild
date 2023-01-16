@@ -1,0 +1,120 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 5rem;
+  background: rgba(33, 33, 33, 0.83);
+}
+
+.gridContainer {
+  height: 100vh;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 500px;
+  height: 500px;
+}
+
+.card {
+  border-radius: 10px;
+  width: 550px;
+  background: #3b3a3d;
+}
+
+.text {
+  color: white;
+
+  padding-top: 1rem;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5rem;
+}
+
+.lowerContainer {
+  display: flex;
+  flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  padding-top: 1rem;
+
+}
+
+.description {
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 1rem;
+  z-index: 1;
+    font-size: 1rem;
+
+}
+
+.grid {
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 5rem;
+}
+
+.gridItem {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.content {
+  width: 100vw;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .card {
+    width: 430px;
+  }
+
+  .image {
+    width: 400px;
+  }
+}
+
+.carouselSlide {
+    cursor: pointer;
+
+}
+

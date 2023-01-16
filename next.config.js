@@ -1,6 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
 
-module.exports = nextConfig
+module.exports = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'vashonbuild-com.nyc3.cdn.digitaloceanspaces.com',
+        pathname: '/production/app/uploads/**',
+        port: ''
+      }
+    ],
+  },
+};
