@@ -44,8 +44,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 
 }
+
+.modal1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 
 @media (max-width: 768px) {
     .title {

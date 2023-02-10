@@ -27,6 +27,12 @@ import mcculley1 from "../../../public/projects/McCulley/mcculley1.jpg";
 import mcculley2 from "../../../public/projects/McCulley/mcculley2.jpg";
 import mcculley3 from "../../../public/projects/McCulley/mcculley3.jpg";
 import mcculley4 from "../../../public/projects/McCulley/mcculley4.jpg";
+
+import burtonloop1 from "../../../public/projects/BurtonLoop/DSC331120160917at153827.jpg";
+import burtonloop2 from "../../../public/projects/BurtonLoop/DSC335720160917at155608.jpg";
+import burtonloop3 from "../../../public/projects/BurtonLoop/JDG5751.jpg";
+import burtonloop4 from "../../../public/projects/BurtonLoop/JDG5764.jpg";
+import burtonloop5 from "../../../public/projects/BurtonLoop/JDG5782.jpg";
 import {useRouter} from "next/router";
 import { MantineProvider } from "@mantine/core";
 import { createStyles} from "@mantine/core";
@@ -75,6 +81,13 @@ export default function Portfolio() {
             description: 'this is a description',
             images: [mcculley1, mcculley2, mcculley3, mcculley4],
             link: '/projects/4'
+        },
+        {
+            title: 'Burton Loop',
+            description: 'this is a description',
+            images: [burtonloop1, burtonloop2, burtonloop3, burtonloop4, burtonloop5],
+            link: '/projects/5'
+
         }
     ]
     const { classes } = useStyles();

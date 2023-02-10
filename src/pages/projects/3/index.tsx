@@ -12,7 +12,7 @@ import { useMediaQuery } from '@mui/material';
 export default function Denslow({imageData}) {
     // Get the image data only for this project
     const [opened, setOpened] = useState(false);
-    const denslowImages = imageData[2];
+    const denslowImages = imageData[3];
     // @ts-ignore
     const handleClick = (index) => {
         setOpened(index);
@@ -61,7 +61,7 @@ export default function Denslow({imageData}) {
                                    size="lg"
                                    fullScreen={isMobile}
                                    padding="md"
-                                   className={Styles.modal}
+                                   className={Styles.modal1}
                             >
                                 <img
                                     src={`${item.img}?w=248&fit=crop&auto=format`}
