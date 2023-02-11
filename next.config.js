@@ -8,6 +8,12 @@ module.exports = {
         hostname: 'vashonbuild-com.nyc3.cdn.digitaloceanspaces.com',
         pathname: '/production/app/uploads/**',
         port: ''
+      },
+      {
+        protocol: 'https',
+        hostname: 'drive.google.com',
+        pathname: '**',
+        port: ''
       }
     ],
   },
