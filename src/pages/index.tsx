@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Vashon Build | Serving Vashon Island and Beyond</title>
+        <title>Vashon Build | Serving Vashon Island</title>
         <meta name="description" content="Vashon based construction company." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
