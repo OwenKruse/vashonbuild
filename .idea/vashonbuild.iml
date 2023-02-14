@@ -9,5 +9,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="nextjsflightfinder" />
+    <orderEntry type="module" module-name="getSRCS" />
   </component>
 </module>

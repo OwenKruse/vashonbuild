@@ -59,31 +59,31 @@ export default function Portfolio() {
     }));
     const projects = [
         {
-            title: 'Modern Single Story ',
+            title: 'Timber Frame on South Vashon Island ',
             description: 'This modern home on Vashon Island is a single-story, open-concept design with clean lines and an abundance of natural light. The exterior is constructed of cedar siding and large windows that provide stunning views of the surrounding forest.',
             images: [denslow1, denslow2, denslow3, denslow4, denslow5],
             link: '/projects/1'
         },
         {
-            title: 'Two Story Contemporary',
+            title: 'Contemporary Home and Studio Above The Sound',
             description: 'This modern home on Vashon Island is a two-story contemporary design built with wood and metal elements, featuring large windows for stunning views of the water and natural light. ',
             images: [GordonManetti1, GordonManetti2, GordonManetti3, GordonManetti4],
             link: '/projects/2'
         },
         {
-            title: 'Knight',
+            title: 'Compact Getaway on Glen Acres',
             description: 'this is a description',
             images: [knight3, knight2, knight1, knight4, knight5],
             link: '/projects/3'
         },
         {
-            title: 'McCulley',
+            title: 'Forest Home on West Side Highway',
             description: 'this is a description',
             images: [mcculley1, mcculley2, mcculley3, mcculley4],
             link: '/projects/4'
         },
         {
-            title: 'Burton Loop',
+            title: 'Burton 5-star Built Green Certified Home',
             description: 'this is a description',
             images: [burtonloop1, burtonloop2, burtonloop3, burtonloop4, burtonloop5],
             link: '/projects/5'

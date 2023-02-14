@@ -1,5 +1,5 @@
 .container{
-    background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url("../../public/projects/Denslow/denslow1.jpg") no-repeat center center fixed;
+    background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url("https://res.cloudinary.com/dtu1eezmp/image/upload/v1676092290/Projects/Denslow/denslow1_ov3yfr?w=248&fit=crop&auto=format&dpr=2") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -9,6 +9,55 @@
     width: 100%;
     font-family: 'Roboto', sans-serif;
 }
+
+.container1{
+    background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url("https://res.cloudinary.com/dtu1eezmp/image/upload/v1676092290/Projects/GordonManetti/GordonManetti1_cj5mcc?w=248&fit=crop&auto=format&dpr=2") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    height: 75vh;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container2{
+    background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url("https://res.cloudinary.com/dtu1eezmp/image/upload/v1676092290/Projects/Knight/knight3_zn46xj?w=248&fit=crop&auto=format&dpr=2") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    height: 75vh;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container3{
+    background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url("https://res.cloudinary.com/dtu1eezmp/image/upload/v1676092290/Projects/McCulley/mcculley1_bttgop?w=248&fit=crop&auto=format&dpr=2") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    height: 75vh;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container4{
+    background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url("https://res.cloudinary.com/dtu1eezmp/image/upload/v1676092290/Projects/BurtonLoop/DSC344820160922at124556_nddvwq?w=248&fit=crop&auto=format&dpr=2") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    height: 75vh;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
 
 .title{
     font-size: 3rem;

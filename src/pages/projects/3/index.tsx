@@ -12,7 +12,7 @@ import { useMediaQuery } from '@mui/material';
 export default function Denslow({imageData}) {
     // Get the image data only for this project
     const [opened, setOpened] = useState(false);
-    const denslowImages = imageData[3];
+    const denslowImages = imageData[3].images;
     // @ts-ignore
     const handleClick = (index) => {
         setOpened(index);
@@ -21,26 +21,21 @@ export default function Denslow({imageData}) {
     return (
         <>
             <Head>
-                <title>Vashon Build | Single Story Open Design</title>
+                <title>Vashon Build | Compact Getaway on Glen Acres</title>
                 <meta name="description" content="Vashon based construction company."/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
-            <div className={Styles.container}>
+            <div className={Styles.container2}>
                 <NavBar/>
                 <div className={Styles.title}>
-                    <h1>Modern Single Story Home</h1>
+                    <h1>Compact Getaway on Glen Acres</h1>
                 </div>
             </div>
             <div className={Styles.content}>
                 <div className={Styles.text}>
                     <p>
-                        This modern home on Vashon Island is a single-story open-concept design that features cedar
-                        siding, large windows, a concrete slab foundation, a flat standing seam metal roof, high
-                        ceilings, an abundance of natural light, a radiant heating system, and low-maintenance durable
-                        materials. The home was built with a focus on energy efficiency, sustainable materials and
-                        modern aesthetic. The result is a beautiful,
-                        comfortable and sustainable home that is well-suited to the island lifestyle.
+                        Affordability along with unique interior finishes make this a wonderful getaway to the forest of Vashon Island.  A long building footprint is complimented with indents to exterior walls at living/kitchen areas.  &ldquo;Perfect Wall&ldquo; exterior wall assembly alleviates thermal bridging and presents exposed framing to the interior for a warm and modern feel.
                     </p>
                 </div>
                 <ImageList variant="masonry" cols={isMobile ? 2 : 3} gap={8}>
@@ -84,7 +79,7 @@ export default function Denslow({imageData}) {
 }
 
 export async function getStaticProps() {
-    const imageData = GetImageData();
+    const imageData = await GetImageData();
     console.log(imageData);
     return {
         props: {

@@ -1,50 +1,34 @@
-import * as fs from "fs";
-import * as path from "path";
+async function GetImageData() {
+    const cloudinary = require('cloudinary');
+    const projectNames = ['BurtonLoop', 'Denslow', 'GordonManetti', 'Knight', 'McCulley']
 
-const GetImageData = () => {
-    // Read all the images in the public/projects directory in the directory there are subdirectories for each project
-    // Each subdirectory has the images for that project
+    const fs = require('fs');
+    const path = require('path');
 
-    // Get the path to the public/projects directory
-    const projectsPath = path.join(process.cwd(), "public/projects");
+    let projects = [{name: 'BurtonLoop', images: []}, {name: 'Denslow', images: []}, {name: 'GordonManetti', images: []}, {name: 'Knight', images: []}, {name: 'McCulley', images: []}];
 
-    // Get the names of all the subdirectories in the public/projects directory skip the .DS_Store file
-    const projectNames = fs.readdirSync(projectsPath).filter((item) => item !== ".DS_Store");
-    console.log(projectNames);
-    // Create an array to store each project's image srcs
-    const projects: any[][] = [];
-
-    // Loop through each project name
-    projectNames.forEach((projectName) => {
-        // Get the path to the project's directory
-        const projectPath = path.join(projectsPath, projectName);
-        // Get the names of all the images in the project's directory
-        const imageNames = fs.readdirSync
-        (projectPath).filter((item) => item !== ".DS_Store");
-        // Create an array to store the image srcs for this project
-        const projectImages: any[] = [];
-        // Loop through each image name
-        imageNames.forEach((imageName) => {
-            // Create the image src
-            const imageSrc = `/projects/${projectName}/${imageName}`;
-            // Create the image title
-            const imageTitle = imageName.split(".")[0];
-            // Create the image object
-            const image = {
-                img: imageSrc,
-                title: imageTitle
-            }
-            // Add the image object to the projectImages array
-            projectImages.push(image);
-            // Add the image src to the projectImages array
-        }
-        );
-        // Add the projectImages array to the projects array
-        projects.push(projectImages);
+    // Get the images_names from the text files in public/project_images and push them to the corresponding array
+    for (let i = 0; i < projectNames.length; i++) {
+        const project = projectNames[i];
+        const projectImages = fs.readFileSync(path.join(process.cwd(), 'public/project_images', project + '.txt'), 'utf8');
+        projects[i].images = projectImages.split('\n');
     }
-    );
+    // For each project, loop through the images and create a new object with the image name and the image data
+    for (let i = 0; i < projects.length; i++) {
+        const project = projects[i];
+        const images = project.images;
+        const imagesData = [];
+        for (let j = 0; j < images.length; j++) {
+            const image = images[j];
+            const imageSRC = 'https://res.cloudinary.com/dtu1eezmp/image/upload/v1676092290/Projects/' + project.name + '/' + image;
+            const object = {img: imageSRC};
+            imagesData.push(object);
+    }
+    // @ts-ignore
+        projects[i].images = imagesData;
+}
     return projects;
+}
 
-};
 
 export default GetImageData;

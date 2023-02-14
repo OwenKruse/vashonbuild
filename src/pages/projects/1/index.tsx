@@ -11,7 +11,9 @@ import { useMediaQuery } from '@mui/material';
 export default function Denslow({imageData}) {
     // Get the image data only for this project
     const [opened, setOpened] = useState(false);
-    const denslowImages = imageData[1];
+    console.log(imageData)
+    // Images are in
+    const denslowImages = imageData[1].images;
     // @ts-ignore
     const handleClick = (index) => {
         setOpened(index);
@@ -20,7 +22,7 @@ export default function Denslow({imageData}) {
     return (
         <>
             <Head>
-                <title>Vashon Build | Single Story Open Design</title>
+                <title>Vashon Build | Timber Frame on South Vashon Island</title>
                 <meta name="description" content="Vashon based construction company."/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" href="/favicon.ico"/>
@@ -28,23 +30,19 @@ export default function Denslow({imageData}) {
             <div className={Styles.container}>
                 <NavBar/>
                 <div className={Styles.title}>
-                    <h1>Modern Single Story Home</h1>
+                    <h1>Timber Frame on South Vashon Island</h1>
                 </div>
             </div>
             <div className={Styles.content}>
                 <div className={Styles.text}>
                     <p>
-                        This modern home on Vashon Island is a single-story open-concept design that features cedar
-                        siding, large windows, a concrete slab foundation, a flat standing seam metal roof, high
-                        ceilings, an abundance of natural light, a radiant heating system, and low-maintenance durable
-                        materials. The home was built with a focus on energy efficiency, sustainable materials and
-                        modern aesthetic. The result is a beautiful,
-                        comfortable and sustainable home that is well-suited to the island lifestyle.
+                        Energy Efficiency and Architecture were the client goals for this home.  Butterfly rooflines accommodate high window openings on both sides of the home for excellent daylighting.  The exterior shell is constructed with structural insulated panels (SIPs) and the interior and exterior finishes were beautifully designed and executed with craft and care. Fabcab Design.
                     </p>
                 </div>
                 <ImageList variant="masonry" cols={isMobile ? 2 : 3} gap={8}>
                     {denslowImages.map((item: { img: Key | null | undefined; title: string | undefined; }, index: any) => (
-                        <ImageListItem key={item.img} onClick={() => handleClick(index)}>                            <img
+                        <ImageListItem key={item.img} onClick={() => handleClick(index)}>
+                            <img
                                 src={`${item.img}?w=248&fit=crop&auto=format`}
                                 srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                                 alt={item.title}
@@ -83,8 +81,7 @@ export default function Denslow({imageData}) {
 }
 
 export async function getStaticProps() {
-    const imageData = GetImageData();
-    console.log(imageData);
+    const imageData = await GetImageData();
     return {
         props: {
             imageData
