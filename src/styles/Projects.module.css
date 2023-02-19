@@ -119,6 +119,7 @@
      */
     .container {
         background-position: center;
+        background-size: contain;
     }
     .container {
         height: 75vh;
