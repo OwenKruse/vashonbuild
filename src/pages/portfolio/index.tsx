@@ -59,13 +59,13 @@ export default function Portfolio() {
     }));
     const projects = [
         {
-            title: 'Timber Frame on South Vashon Island ',
+            title: 'Contemporary Home and Studio Above The Sound ',
             description: 'This modern home on Vashon Island is a single-story, open-concept design with clean lines and an abundance of natural light. The exterior is constructed of cedar siding and large windows that provide stunning views of the surrounding forest.',
             images: [denslow1, denslow2, denslow3, denslow4, denslow5],
             link: '/projects/1'
         },
         {
-            title: 'Contemporary Home and Studio Above The Sound',
+            title: 'Timber Frame on South Vashon Island ',
             description: 'This modern home on Vashon Island is a two-story contemporary design built with wood and metal elements, featuring large windows for stunning views of the water and natural light. ',
             images: [GordonManetti1, GordonManetti2, GordonManetti3, GordonManetti4],
             link: '/projects/2'

@@ -21,7 +21,7 @@ export default function Denslow({imageData}) {
     return (
         <>
             <Head>
-                <title>Vashon Build | Contemporary Home and Studio Above The Sound</title>
+                <title>Vashon Build | Timber Frame on South Vashon Island</title>
                 <meta name="description" content="Vashon based construction company."/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" href="/favicon.ico"/>
@@ -29,13 +29,14 @@ export default function Denslow({imageData}) {
             <NavBar/>
             <div className={Styles.container1}>
                 <div className={Styles.title}>
-                    <h1>Contemporary Home and Studio Above The Sound</h1>
+                    <h1>Timber Frame on South Vashon Island</h1>
                 </div>
             </div>
             <div className={Styles.content}>
                 <div className={Styles.text}>
                     <p>
-                        Architecture and unique finishes were the client goals for this home.  Polished concrete floors, bleached Douglas Fir cabinets, interesting finish ceiling geometry, concrete shower walls, etc make this home a true one of a kind. D&lsquo;Arcy Jones Architecture Design.                     </p>
+                        Energy Efficiency and Architecture were the client goals for this home.  Butterfly rooflines accommodate high window openings on both sides of the home for excellent daylighting.  The exterior shell is constructed with structural insulated panels (SIPs) and the interior and exterior finishes were beautifully designed and executed with craft and care. Fabcab Design.
+                    </p>
                 </div>
                 <ImageList variant="masonry" cols={isMobile ? 2 : 3} gap={8}>
                     {denslowImages.map((item: { img: Key | null | undefined; title: string | undefined; }, index: any) => (
