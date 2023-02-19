@@ -1,9 +1,7 @@
 knight5_uoptj8
-knight4_wux1yh
 knight3_zn46xj
 knight2_acskak
 knight1_nip2wb
-VashonBuild49_nobykl
 VashonBuild48_gqoaug
 VashonBuild47_bic8dm
 VashonBuild46_iqpgrc
@@ -12,10 +10,8 @@ VashonBuild43_yygckv
 VashonBuild41_rktaj1
 VashonBuild413_u7kv7k
 VashonBuild412_mif6p7
-VashonBuild411_so2xo7
 VashonBuild410_rcqcl4
 Vashon4InteriorColorEdits8_impidk
-Vashon4InteriorColorEdits6_vv20nf
 Vashon4InteriorColorEdits5_dexy1s
 Vashon4InteriorColorEdits4_gyxh3k
 Vashon4InteriorColorEdits3_aas7oa

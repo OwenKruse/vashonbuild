@@ -85,7 +85,7 @@ export default function Portfolio() {
         {
             title: 'Burton 5-star Built Green Certified Home',
             description: 'this is a description',
-            images: [burtonloop1, burtonloop2, burtonloop3, burtonloop4, burtonloop5],
+            images: [burtonloop1, burtonloop2, burtonloop4, burtonloop5],
             link: '/projects/5'
 
         }
