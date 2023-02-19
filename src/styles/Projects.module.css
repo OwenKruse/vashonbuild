@@ -114,13 +114,17 @@
     .text {
         padding: 2rem 2rem 2rem;
     }
-
+    /* Resize the background so that the mobile device sees the center
+    of the image.
+     */
     .container {
         height: 75vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-size: 100% 100%;
+
     }
 
     .container1 {
