@@ -61,7 +61,7 @@ export default function Portfolio() {
         {
             title: 'Contemporary Home and Studio Above The Sound ',
             description: 'This modern home on Vashon Island is a single-story, open-concept design with clean lines and an abundance of natural light. The exterior is constructed of cedar siding and large windows that provide stunning views of the surrounding forest.',
-            images: [denslow1, denslow2, denslow3, denslow4, denslow5],
+            images: [denslow1, denslow3, denslow4, denslow5],
             link: '/projects/1'
         },
         {
