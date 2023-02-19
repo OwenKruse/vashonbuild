@@ -26,7 +26,7 @@
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 900;
   color: #fff;
   text-align: center;
@@ -52,11 +52,18 @@
     justify-content: center;
     flex: 1;
     padding: 0 10rem;
+  align-content: center;
+    align-items: center;
 
 }
 
 .gridContainer {
-  height: 100vh
+  height: 100vh;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .avatar {
@@ -82,10 +89,18 @@
 
 
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .title {
+   font-size: 1.5rem;
+  }
+
   .text {
-    width: 100%;
-    padding: 0;
+      width: 90%;
+    padding-right: 0;
+
   }
 
   .image {
@@ -94,10 +109,14 @@
 
   .grid {
     flex-direction: column;
+    padding: 0 1rem;
+
   }
 
   .interiorImage {
     margin-top: 2rem;
+    width: 300px;
+    height: 300px;
   }
 }
 

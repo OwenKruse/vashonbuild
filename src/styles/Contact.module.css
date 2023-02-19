@@ -72,10 +72,10 @@
 
 @media (max-width: 768px) {
     .title {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .text {
-        width: 80%;
+        width: 75%;
     }
 }
