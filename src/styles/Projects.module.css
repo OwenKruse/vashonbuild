@@ -4,7 +4,6 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
     height: 75vh;
     width: 100%;
     font-family: 'Roboto', sans-serif;
@@ -112,5 +111,29 @@
 
     .text {
         padding: 2rem 2rem 2rem;
+    }
+
+    .container {
+        height: 100vh;
+    }
+
+    .container1 {
+        height: 100vh;
+    }
+
+    .container2 {
+        height: 100vh;
+    }
+
+    .container3 {
+        height: 100vh;
+    }
+
+    .container4 {
+        height: 100vh;
+    }
+
+    .content {
+        min-height: 100vh;
     }
 }
