@@ -4,7 +4,6 @@ import Image from "next/image";
 import {Button, Container} from "@mantine/core";
 import Styles from "@/styles/About.module.css";
 import {Avatar, Grid} from "@mui/material";
-import interior from "../../../public/images/interior.jpg";
 import {useRouter} from "next/router";
 import Head from "next/head";
 import {useMediaQuery} from "@mui/material";
@@ -45,9 +44,7 @@ export default function About() {
                                             handleClick
                                         } variant="filled" color="blue" size="md">Contact Us</Button>
                                     </div>
-                                    <div className={Styles.image}>
-                                    <Image src={interior} alt={'interior'} className={Styles.interiorImage}/>
-                                    </div>
+
                             </Grid>
                     </div>
                 </div>
