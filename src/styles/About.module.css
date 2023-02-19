@@ -109,8 +109,7 @@
 
   .grid {
     flex-direction: column;
-    padding: 0 1rem;
-
+    margin-bottom: 2rem;
   }
 
   .interiorImage {
