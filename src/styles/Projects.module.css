@@ -1,5 +1,5 @@
 .container{
-    background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url("https://res.cloudinary.com/dtu1eezmp/image/upload/v1676092290/Projects/Denslow/denslow1_ov3yfr") no-repeat center center fixed;
+    background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url("https://res.cloudinary.com/dtu1eezmp/image/upload/v1676092290/Projects/Denslow/denslow1_ov3yfr?w=248&fit=crop&auto=format&dpr=2") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -118,15 +118,12 @@
     of the image.
      */
     .container {
-        background-position: center;
-        background-size: contain;
-    }
-    .container {
         height: 75vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url("https://res.cloudinary.com/dtu1eezmp/image/upload/v1676092290/Projects/Denslow/denslow1_ov3yfr?w=248&fit=crop&auto=format&dpr=2") no-repeat center center;
 
 
     }
@@ -137,6 +134,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url("https://res.cloudinary.com/dtu1eezmp/image/upload/v1676092290/Projects/Denslow/denslow1_ov3yfr?w=248&fit=crop&auto=format&dpr=2") no-repeat center center;
+
     }
 
     .container2 {
@@ -145,6 +144,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url("https://res.cloudinary.com/dtu1eezmp/image/upload/v1676092290/Projects/Denslow/denslow1_ov3yfr?w=248&fit=crop&auto=format&dpr=2") no-repeat center center ;
+
     }
 
     .container3 {
@@ -153,6 +154,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url("https://res.cloudinary.com/dtu1eezmp/image/upload/v1676092290/Projects/Denslow/denslow1_ov3yfr?w=248&fit=crop&auto=format&dpr=2") no-repeat center center ;
+
     }
 
     .container4 {
@@ -161,6 +164,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url("https://res.cloudinary.com/dtu1eezmp/image/upload/v1676092290/Projects/Denslow/denslow1_ov3yfr?w=248&fit=crop&auto=format&dpr=2") no-repeat center center ;
+
     }
 
 
