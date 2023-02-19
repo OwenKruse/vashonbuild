@@ -26,8 +26,8 @@ export default function Denslow({imageData}) {
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
+            <NavBar/>
             <div className={Styles.container2}>
-                <NavBar/>
                 <div className={Styles.title}>
                     <h1>Compact Getaway on Glen Acres</h1>
                 </div>
