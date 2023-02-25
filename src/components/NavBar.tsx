@@ -16,7 +16,7 @@ import {alpha} from "@mui/material/styles";
 import {useRouter} from "next/router";
 import Styles from "@/styles/NavBar.module.css";
 
-const pages = ['Portfolio', 'About', 'Employment', 'Contact'];
+const pages = ['Portfolio', 'Contact'];
 
 function ResponsiveAppBar() {
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);

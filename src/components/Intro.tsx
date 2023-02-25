@@ -2,11 +2,12 @@ import Styles from "@/styles/Intro.module.css";
 import {createStyles} from '@mantine/core';
 import { Container } from '@mantine/core';
 import Image from "next/image";
-import {useMediaQuery} from "@mui/material";
+import {Button, useMediaQuery} from "@mui/material";
 import {Carousel} from "@mantine/carousel";
 import {Paper} from "@mantine/core";
 import {Text} from "@mantine/core";
 import {Title} from "@mantine/core";
+import {useRouter} from "next/router";
 
 export default function Intro() {
 
@@ -87,7 +88,7 @@ export default function Intro() {
 
 
     const isMobile = useMediaQuery('(max-width: 600px)');
-
+    const router = useRouter();
     const slides = data.map((item) => (
         <Carousel.Slide key={item.title}>
             <Card {...item} />
@@ -114,21 +115,44 @@ export default function Intro() {
             <Container className={Styles.container}>
                 <Container className={Styles.grid}>
                 <h1 className={Styles.title}>Quality First</h1>
-                <p className={Styles.description}> We pride ourselves on our deep understanding of the unique challenges that come with building on Vashon Island and in the greater Puget Sound region. Whether it is navigating the complex zoning regulations or dealing with the unique weather conditions, we have the experience and expertise to get the job done right. </p>
+                <p className={Styles.description}>                                             At Vashon Build, we specialize in creating high-quality, custom-designed homes and remodels that prioritize health, comfort, durability, and efficiency. As a family-owned and operated company based on Vashon Island, WA, we serve the local communities of Vashon If you&apos;re ready to start planning your dream home or remodel, we&apos;d love to hear from you.
+                </p>
                 </Container>
                 <Image src={'https://vashonbuild-com.nyc3.cdn.digitaloceanspaces.com/production/app/uploads/2018/06/Vashon-1-Original-Edit-Req-15.jpg'} alt={"Home"} width={500} height={500} className={Styles.image}/>
             </Container>
-            <Container className={Styles.container}>
+            <Container className={Styles.container} >
                 <Image src={'https://vashonbuild-com.nyc3.cdn.digitaloceanspaces.com/production/app/uploads/2020/04/26-FabCab-Vashon-Home-Swift-Studio-2048px.jpg'} alt={'Home'} width={500} height={500} className={Styles.image}/>
                 <Container className={Styles.grid}>
-                <h1 className={Styles.title}>Vashon Community</h1>
-                <p className={Styles.description}> Building on Vashon Island is not just about putting up structures, it is about creating spaces that reflect and enhance the unique community that exists here. The island is known for its tight-knit community, and it is vital that any building project is in line with that community&apos;s values and priorities. This is why at Vashon Build we prioritize using locally sourced materials and working with local tradespeople when possible. By utilizing the talents and resources of the island community, we ensure that our projects are not only functional but also a reflection of the community.</p>
+                <h1 className={Styles.title}>Our Team</h1>
+                <p className={Styles.description}>Vashon Build is a family-owned and operated business, and we take pride in our commitment to the island community. We are a small team of experienced professionals who are passionate about building and remodeling. We are committed to providing our clients with the highest quality workmanship and customer service. We are proud to be a part of the Vashon community, and we look forward to working with you on your next project.</p>
                 </Container>
             </Container>
             <Container className={Styles.container}>
-                <Container className={Styles.grid}>
-                <h1 className={Styles.title}>Sustainable Design</h1>
-                <p className={Styles.description}>the island is known for its natural beauty, and it&apos;s essential that any building project is in harmony with the environment. Vashon Build is committed to sustainable building practices, and we strive to minimize our impact on the island&apos;s natural resources. By being mindful of the island&apos;s ecology, we ensure that our projects are not only beautiful but also responsible. </p>
+                <Container className={Styles.grid} sx={
+                    {
+                        display: 'flex',
+                        flexDirection: 'column',
+                    }
+                }>
+                <h1 className={Styles.title}>Vashon Build Is Hiring!</h1>
+                <p className={Styles.description}> We are looking for qualified applicants to join our team. We offer competitive wages, paid vacation, as well as medical and dental insurance. Give us a call if you think you’d be a great fit for our company! </p>
+                <Button variant="contained"
+                        onClick={() => {
+                            router.push('/contact');
+                        }
+
+                }
+                        color="secondary" sx={
+                    {
+                        color: 'white',
+                        justifySelf: 'center',
+                        alignSelf: 'center',
+                        marginTop: '1rem',
+                        marginBottom: '1rem',
+                    }
+                }>
+                    Contact Us
+                    </Button>
                 </Container>
                 <Image src={'https://vashonbuild-com.nyc3.cdn.digitaloceanspaces.com/production/app/uploads/2018/06/Vashon-Build-1-3-scaled.jpg'} alt={'Home'} width={500} height={500} className={Styles.image}/>
             </Container>

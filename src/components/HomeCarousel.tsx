@@ -27,7 +27,7 @@ export default function HomeCarousel() {
                     <div className={styles.container}>
                         <div className={styles.text}>
                             <h1 className={styles.title}>Vashon Build</h1>
-                            <p className={styles.description}>Serving Vashon Island and Beyond</p>
+                            <p className={styles.description}>Serving Vashon Island</p>
                             <Button className={styles.button} onClick={handleClick} variant="filled" color="orange" size="md">Portfolio</Button>
 
                         </div>
