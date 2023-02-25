@@ -11,10 +11,7 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import Logo from "../../public/images/Logo.png"
 import Image from "next/image";
-import {createTheme, ThemeProvider} from "@mui/material";
-import {alpha} from "@mui/material/styles";
 import {useRouter} from "next/router";
-import Styles from "@/styles/NavBar.module.css";
 
 const pages = ['Portfolio', 'Contact'];
 
