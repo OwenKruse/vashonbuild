@@ -8,7 +8,8 @@ export default function Contact() {
         <>
             <Head>
                 <title>Vashon Build | Contact</title>
-                <meta name="description" content="Vashon Build is a full service general contracting company on Vashon Island, WA. We specialize in new construction, remodels, and additions. We are a small company that prides itself on quality work and excellent customer service." />
+                <meta name="description" content="Vashon Build Contact." />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <body className={Styles.body}>

@@ -101,7 +101,10 @@ export default function Portfolio() {
     return (
         <>
             <Head>
-                <title>Portfolio</title>
+                <title>Vashon Build | Portfolio</title>
+                <meta name="description" content="Vashon Build portfolio." />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link rel="icon" href="/favicon.ico" />
             </Head>
             <NavBar />
                 <div className={Styles.container}>
