@@ -8,6 +8,7 @@ import {Paper} from "@mantine/core";
 import {Text} from "@mantine/core";
 import {Title} from "@mantine/core";
 import {useRouter} from "next/router";
+import Head from "next/head";
 
 export default function Intro() {
 
@@ -102,6 +103,7 @@ export default function Intro() {
                         align="start"
                         loop
                         draggable={true}
+                        withIndicators={true}
                         slidesToScroll={1}
                     >
                         {slides}
@@ -111,7 +113,12 @@ export default function Intro() {
     }
     return (
         <div className={Styles.body}>
-
+            <Head>
+                <title>Vashon Build | Serving Vashon Island</title>
+                <meta name="description" content="Vashon based construction company." />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <Container className={Styles.container}>
                 <Container className={Styles.grid}>
                 <h1 className={Styles.title}>Quality First</h1>
