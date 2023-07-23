@@ -50,8 +50,24 @@ function ResponsiveAppBar() {
                     zIndex: 1,
                 }
             }>
-                <Container maxWidth="xl">
-                    <Toolbar >
+                <Container maxWidth="xl" sx={{
+                    paddingLeft: {
+                        xs: "0",
+                        sm: ".5rem",
+                    },
+                    paddingRight: {
+                        xs: "0",
+                        sm: ".5rem",
+                    },
+                }}>
+                    <Toolbar sx={
+                        {
+                            display: "flex",
+                            justifyContent: "space-between",
+                            alignItems: "center",
+                            zIndex: 1,
+                        }
+                    } >
                         <Image src={Logo} alt={"Logo"} style={{
                             width: "5vh",
                             height: "5vh",
@@ -76,28 +92,30 @@ function ResponsiveAppBar() {
 
 
                         <Typography
-                            variant="h5"
+                            variant="h4"
                             noWrap
                             onClick={() => router.push("/")}
                             component="a"
                             href=""
                             sx={{
-                                mr: 2,
                                 display: { xs: 'flex', md: 'none' },
                                 flexGrow: 1,
                                 fontFamily: 'monospace',
                                 fontWeight: 700,
                                 letterSpacing: '.3rem',
                                 textDecoration: 'none',
+                                fontSize: {
+                                    xs: "0.75rem",
+                                    sm: "1rem",
+                                }
                             }}
                         >
                             Vashon Build
                         </Typography>
                         <Box sx={{
-                            flexGrow: 1,
                             display: { xs: 'none', md: 'flex' },
+                            flexGrow: 1,
                             justifyContent: 'flex-end',
-
                         }}>
                             {pages.map((page) => (
                                 <Button
@@ -115,18 +133,22 @@ function ResponsiveAppBar() {
                         <Box sx={{
                             flexGrow: 1,
                             display: { xs: 'flex', md: 'none' },
-                            justifyContent: "flex-end"
-
-
-
+                            justifyContent: {
+                                xs: "center",
+                                sm: "flex-end",
+                            },
+                            width: "0%",
                         }}>
                             <IconButton
                                 size="large"
-                                aria-label="account of current user"
                                 aria-controls="menu-appbar"
                                 aria-haspopup="true"
                                 onClick={handleOpenNavMenu}
                                 color="inherit"
+                                style={{
+                                    justifyContent: "flex-end",
+
+                                    }}
                             >
                                 <MenuIcon />
                             </IconButton>
