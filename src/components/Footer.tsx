@@ -1,11 +1,15 @@
 import Styles from "@/styles/Footer.module.css";
+import {Center, Container} from "@mantine/core";
 
 export default function Footer() {
     return (
         <>
-            <footer className={Styles.footer}>
+            <footer className={Styles.footer} style={{
+                width: '100%',
+                backgroundColor: 'rgba(0,0,0,0.75)',
+            }}>
                 <div className={Styles.container}>
-                    <div className={Styles.content}>
+                    <Container size={'lg'} className={Styles.content}>
                         <div className={Styles.text}>
                             <p>
                                 Vashon Build LLC
@@ -21,7 +25,7 @@ export default function Footer() {
                             </p>
                             </div>
                         </div>
-                    </div>
+                    </Container>
                 </div>
             </footer>
         </>

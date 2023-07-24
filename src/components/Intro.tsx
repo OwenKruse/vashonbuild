@@ -8,6 +8,8 @@ import {Paper} from "@mantine/core";
 import {Text} from "@mantine/core";
 import {Title} from "@mantine/core";
 import {useRouter} from "next/router";
+import {Grid} from "@mantine/core";
+import {Center} from "@mantine/core";
 import Head from "next/head";
 
 export default function Intro() {
@@ -113,22 +115,52 @@ export default function Intro() {
     }
     return (
         <div className={Styles.body}>
-            <Container className={Styles.container}>
-                <Container className={Styles.grid}>
-                <h1 className={Styles.title}>Quality First</h1>
-                <p className={Styles.description}>                                             At Vashon Build, we specialize in creating high-quality, custom-designed homes and remodels that prioritize health, comfort, durability, and efficiency. As a family-owned and operated company based on Vashon Island, WA, we serve the local communities of Vashon If you&apos;re ready to start planning your dream home or remodel, we&apos;d love to hear from you.
-                </p>
+            <Center className={Styles.container} sx={{
+                backgroundColor: 'rgba(0,0,0,0.25)',
+                width: '100%',
+            }}>
+                <Container size={'lg'}
+                sx={{
+                    display: 'flex',
+                    flexDirection: 'row',
+                }}
+                >
+                    <Container className={Styles.grid}>
+                    <h1 className={Styles.title}>Quality First</h1>
+                    <p className={Styles.description}>                                             At Vashon Build, we specialize in creating high-quality, custom-designed homes and remodels that prioritize health, comfort, durability, and efficiency. As a family-owned and operated company based on Vashon Island, WA, we serve the local communities of Vashon If you&apos;re ready to start planning your dream home or remodel, we&apos;d love to hear from you.
+                    </p>
+                    </Container>
+                    <Image src={'https://vashonbuild-com.nyc3.cdn.digitaloceanspaces.com/production/app/uploads/2018/06/Vashon-1-Original-Edit-Req-15.jpg'} alt={"Home"} width={550} height={450} className={Styles.image}/>
                 </Container>
-                <Image src={'https://vashonbuild-com.nyc3.cdn.digitaloceanspaces.com/production/app/uploads/2018/06/Vashon-1-Original-Edit-Req-15.jpg'} alt={"Home"} width={500} height={500} className={Styles.image}/>
-            </Container>
-            <Container className={Styles.container} >
+            </Center>
+            <Center className={Styles.container} sx={{
+                width: '100%',
+            }} >
+            <Container size={'lg'} sx={{
+                display: 'flex',
+                flexDirection: 'row',
+            }} >
                 <Image src={'https://vashonbuild-com.nyc3.cdn.digitaloceanspaces.com/production/app/uploads/2020/04/26-FabCab-Vashon-Home-Swift-Studio-2048px.jpg'} alt={'Home'} width={500} height={500} className={Styles.image}/>
-                <Container className={Styles.grid}>
+                <Container className={Styles.grid} sx={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    marginLeft: '3rem',
+                }}>
                 <h1 className={Styles.title}>Our Team</h1>
                 <p className={Styles.description}>Vashon Build is a family-owned and operated business, and we take pride in our commitment to the island community. We are a small team of experienced professionals who are passionate about building and remodeling. We are committed to providing our clients with the highest quality workmanship and customer service. We are proud to be a part of the Vashon community, and we look forward to working with you on your next project.</p>
                 </Container>
             </Container>
-            <Container className={Styles.container}>
+
+            </Center>
+            <Center className={Styles.container} sx={{
+                backgroundColor: 'rgba(0,0,0,0.25)',
+                width: '100%',
+
+            }}>
+                <Container size={'lg'} sx={{
+                    display: 'flex',
+
+                }}>
                 <Container className={Styles.grid} sx={
                     {
                         display: 'flex',
@@ -156,7 +188,8 @@ export default function Intro() {
                     </Button>
                 </Container>
                 <Image src={'https://vashonbuild-com.nyc3.cdn.digitaloceanspaces.com/production/app/uploads/2018/06/Vashon-Build-1-3-scaled.jpg'} alt={'Home'} width={500} height={500} className={Styles.image}/>
-            </Container>
+                </Container>
+            </Center>
 
         </div>
     );

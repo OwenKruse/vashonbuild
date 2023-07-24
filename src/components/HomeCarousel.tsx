@@ -28,8 +28,21 @@ export default function HomeCarousel() {
                         <div className={styles.text}>
                             <h1 className={styles.title}>Vashon Build</h1>
                             <p className={styles.description}>Serving Vashon Island</p>
+                            <div>
                             <Button className={styles.button} onClick={handleClick} variant="filled" color="orange" size="md">Portfolio</Button>
-
+                            <Button className={styles.button} onClick={
+                                        () => {
+                                            //Scroll 100vh with smooth behavior
+                                            window.scrollBy({
+                                                top: window.innerHeight,
+                                                left: 0,
+                                                behavior: 'smooth'
+                                            });
+                                        }
+                            } sx={{
+                                marginLeft: '1rem'
+                            }} variant="filled" color="blue" size="md">Learn More</Button>
+                            </div>
                         </div>
 
                     </div>

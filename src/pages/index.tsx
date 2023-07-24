@@ -4,6 +4,7 @@ import Intro from "@/components/Intro";
 
 import Navbar from '../components/NavBar'
 import HomeCarousel from "@/components/HomeCarousel";
+import Footer from "@/components/Footer";
 
 
 export default function Home() {
