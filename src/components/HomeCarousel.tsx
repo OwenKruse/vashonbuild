@@ -17,6 +17,7 @@ const useStyles = createStyles((_theme, _params, getRef) => ({
 export default function HomeCarousel() {
     const autoplay = useRef(Autoplay({ delay: 5000 }));
     const router = useRouter();
+    const isMobile = useMediaQuery('(max-width: 600px)');
     const handleClick = () => {
         router.push('/portfolio');
     }
@@ -28,9 +29,18 @@ export default function HomeCarousel() {
                         <div className={styles.text}>
                             <h1 className={styles.title}>Vashon Build</h1>
                             <p className={styles.description}>Serving Vashon Island</p>
-                            <div>
+                            <div style={
+                                {
+                                    // Dont Wrap
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    flexWrap: 'nowrap',
+                                    justifyContent: 'center',
+                                    alignItems: 'center',
+                                }
+                            }>
                             <Button className={styles.button} onClick={handleClick} variant="filled" color="orange" size="md">Portfolio</Button>
-                            <Button className={styles.button} onClick={
+                                <Button className={styles.button} onClick={
                                         () => {
                                             //Scroll 100vh with smooth behavior
                                             window.scrollBy({
