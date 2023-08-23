@@ -17,7 +17,6 @@ const useStyles = createStyles((_theme, _params, getRef) => ({
 export default function HomeCarousel() {
     const autoplay = useRef(Autoplay({ delay: 5000 }));
     const router = useRouter();
-    const isMobile = useMediaQuery('(max-width: 600px)');
     const handleClick = () => {
         router.push('/portfolio');
     }
